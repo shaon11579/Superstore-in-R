@@ -48,8 +48,8 @@ data("Superstore",package="mlbench")
 attach(Superstore)
 summary(Superstore)
 
-cl_3<-kmeans(BostonHousing[c("Sales","Product")],3)
-cl_4<-kmeans(BostonHousing[c("Sales","Product")],4)
+cl_3<-kmeans(Superstore[c("Sales","Product")],3)
+cl_4<-kmeans(Superstore[c("Sales","Product")],4)
 names(cl_3)
 # Check better cluster 
 
